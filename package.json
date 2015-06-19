@@ -1,0 +1,48 @@
+{
+  "name": "component-masthead",
+  "version": "1.0.0",
+  "description": "A basic MH",
+  "author": "The Economist (http://economist.com)",
+  "license": "ISC",
+  "repository": "git@github.com:the-economist-editorial/component-masthead.git",
+  "homepage": "https://github.com/the-economist-editorial/component-masthead/wiki",
+  "bugs": "https://github.com/the-economist-editorial/component-masthead/issues",
+  "main": "index.js",
+  "browserify": {
+    "transform": {
+      "0": {
+        "0": "babelify",
+        "1": {
+          "stage": 0
+        }
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "strict"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "preinstall": "devpack-configure ./package.json",
+    "prepublish": "browserify -u react -d index.js -p [minifyify --bundle bundle.map.json] > bundle.js",
+    "serve": "component-devserver .",
+    "test": "npm run test:base -- -R tap",
+    "test:base": "mocha -r babel/register -r @economist/component-testharness",
+    "test:watch": "npm run test:base -- -wR min"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "@economist/component-devserver": "^1.0.0",
+    "@economist/component-testharness": "^1.0.0",
+    "babel": "^5.5.8",
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "eslint": "^0.23.0",
+    "eslint-config-strict": "^2.0.0",
+    "eslint-plugin-filenames": "^0.1.1",
+    "eslint-plugin-one-variable-per-var": "^0.0.3",
+    "mocha": "^2.2.5"
+  }
+}
