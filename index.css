@@ -1,3 +1,5 @@
+@import '../component-sharebar';
+
 :root {
   --color-white: #fff;
   --color-black: #000;
