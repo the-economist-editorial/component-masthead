@@ -1,5 +1,3 @@
-@import '../component-sharebar';
-
 :root {
   --color-white: #fff;
   --color-black: #000;
@@ -117,6 +115,7 @@
 .mnv-ec-masthead-logo  img {
   height: calc(var(--barHeight) - (var(--spacing)*2));
   width: auto;
+  border: none;
 }
 
 .mnv-ec-masthead-wrap  h1 {
@@ -158,12 +157,12 @@
   height: inherit;
 }
 
-@media (--mobile){
+/*@media (--mobile){
   .mnv-ec-masthead-wrap {
     display: inline-block;
     width: 100%;
   }
-}
+}*/
 
 @media only screen and (max-width: 980px) {
   .mnv-ec-masthead-logo img {
