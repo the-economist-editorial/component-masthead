@@ -38,5 +38,4 @@ export default class MastHead extends React.Component {
       </div>
     );
   }
-
-  }
+}
