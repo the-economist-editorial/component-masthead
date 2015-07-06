@@ -1,12 +1,12 @@
 {
-  "name": "component-page",
+  "name": "@economist/component-masthead",
   "version": "1.0.0",
   "description": "A basic page",
   "author": "The Economist (http://economist.com)",
   "license": "ISC",
-  "repository": "git@github.com:the-economist-editorial/component-page.git",
-  "homepage": "https://github.com/the-economist-editorial/component-page/wiki",
-  "bugs": "https://github.com/the-economist-editorial/component-page/issues",
+  "repository": "git@github.com:the-economist-editorial/component-masthead.git",
+  "homepage": "https://github.com/the-economist-editorial/component-masthead/wiki",
+  "bugs": "https://github.com/the-economist-editorial/component-masthead/issues",
   "main": "index.js",
   "browserify": {
     "transform": [
