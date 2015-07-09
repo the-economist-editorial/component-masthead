@@ -41,7 +41,7 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "@economist/component-devpack": "^1.7.0",
+    "@economist/component-devpack": "^1.7.1",
     "@economist/component-devserver": "^1.6.1",
     "@economist/component-testharness": "^1.1.0",
     "babel": "^5.5.8",
