@@ -1,6 +1,4 @@
 node_modules/
-bundle.*
 *.log
-/node_modules
-bundle.js
+*.js
 
