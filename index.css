@@ -19,9 +19,7 @@
   --barHeight: 70px;
   --spacing: 7px;
 
-};
-
-/* Fonts */
+}
 @font-face {
   font-family: 'Officina';
   src: url('http://cdn.static-economist.com/sites/default/files/external/components/assets/fonts/Officina/Officina.eot');
@@ -29,7 +27,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Officina_bold';
   src: url('http://cdn.static-economist.com/sites/default/files/external/components/assets/fonts/Officina/Officina_bold.eot');
@@ -37,7 +34,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /* MediaQueries */
 @custom-media --mobilePortrait screen and (max-width: 767px) and (orientation: portrait);
 @custom-media --mobileLandscape screen and (max-width: 767px) and (orientation: landscape);
@@ -80,14 +76,12 @@
   height: var(--barHeight);
   -webkit-font-smoothing: antialiased;
 }
-
 @media (--mobile){
   .mnv-ec-masthead {
     height: auto;
     padding: 0;
   }
 }
-
 .mnv-ec-masthead-outer-wrap {
   max-width: 960px;
   margin: auto;
@@ -96,28 +90,24 @@
   background-repeat: no-repeat;
   background-position: top right;
 }
-
 @media (--mobile){
   .mnv-ec-masthead-outer-wrap {
     padding: 0 !important;
   }
 }
-
 .mnv-ec-masthead-logo {
   width: auto;
 }
 @media (--mobile){
-  .mnv-ec-masthead-logo {
+  .mnv-ec-masthead-logo svg {
     display: none;
   }
 }
-
-.mnv-ec-masthead-logo  img {
+.mnv-ec-masthead-logo  svg {
   height: calc(var(--barHeight) - (var(--spacing)*2));
   width: auto;
   border: none;
 }
-
 .mnv-ec-masthead-wrap  h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -156,20 +146,11 @@
   display: table-row;
   height: inherit;
 }
-
-/*@media (--mobile){
-  .mnv-ec-masthead-wrap {
-    display: inline-block;
-    width: 100%;
-  }
-}*/
-
 @media only screen and (max-width: 980px) {
-  .mnv-ec-masthead-logo img {
+  .mnv-ec-masthead-logo {
     margin-left: 9px;
   }
 }
-
 .mnv-ec-masthead-sponsor-label {
   color: var(--color-grey);
   white-space: nowrap;
@@ -180,19 +161,15 @@
   padding-right: 6px;
   font-weight: bold;
 }
-
-
-.mnv-ec-masthead-sponsor img {
+.mnv-ec-masthead-sponsor svg {
   max-height: calc(var(--barHeight) - (var(--spacing)*2));
   height: 100%;
 }
-
 @media (--mobile){
-  .mnv-ec-masthead-sponsor img {
+  .mnv-ec-masthead-sponsor svg {
     padding-right: var(--spacing);
   }
 }
-
 .mnv-ec-masthead-wrap > * {
   display: table-cell;
   vertical-align: top;

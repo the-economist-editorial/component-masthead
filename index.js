@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '@economist/component-icon';
 
 export default class MastHead extends React.Component {
 
@@ -16,7 +17,7 @@ export default class MastHead extends React.Component {
       logo: {
         href: 'http://www.economist.com',
         alt: 'The Economist',
-        src: '//cdn.static-economist.com/sites/all/themes/econfinal/images/svg/logo.svg',
+        type: 'logoEconomist',
       },
     };
   }
@@ -27,10 +28,11 @@ export default class MastHead extends React.Component {
         <div className="mnv-ec-masthead-outer-wrap">
           <div className="mnv-ec-masthead-wrap">
             <a href={this.props.logo.href}
-            className="mnv-ec-masthead-logo svg-logo">
-              <img alt={this.props.logo.alt}
-              src={this.props.logo.src}
-              className="mh-logo"/>
+            className="mnv-ec-masthead-logo svg-logo" title={this.props.logo.alt}>
+              <Icon
+              type={this.props.logo.type}
+              shape="square"
+              size="0 0 144 72"/>
             </a>
             {this.props.title ?
               <h1 className="mnv-ec-masthead-text">
