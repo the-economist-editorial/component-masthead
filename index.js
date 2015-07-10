@@ -32,7 +32,7 @@ export default class MastHead extends React.Component {
               <Icon
               type={this.props.logo.type}
               shape="square"
-              size="0 0 144 72"/>
+              size={this.props.logo.type === 'logoEconomist' ? '0 0 144 72' : '0 0 1024 1024' }/>
             </a>
             {this.props.title ?
               <h1 className="mnv-ec-masthead-text">
