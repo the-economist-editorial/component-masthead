@@ -50,12 +50,10 @@
     ]
   },
   "config": {
-    "lint_opts": "--ignore-path .gitignore --ext es6"
+    "lint_opts": "--ignore-path .gitignore --ext .es6"
   },
   "scripts": {
     "lint": "eslint $npm_package_config_lint_opts .",
-    "postinstall": "",
-    "preinstall": "",
     "prepublish": "babel index.es6 --stage=0 --loose > index.js",
     "provision": "devpack-configure ./package.json",
     "serve": "component-devserver .",
@@ -67,7 +65,7 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "@economist/component-devpack": "^2.0.2",
+    "@economist/component-devpack": "^2.1.1",
     "@economist/component-devserver": "^2.0.0",
     "@economist/component-testharness": "^1.1.0",
     "babel": "^5.5.8",
