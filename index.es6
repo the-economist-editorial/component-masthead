@@ -17,34 +17,39 @@ export default class MastHead extends React.Component {
       logo: {
         href: 'http://www.economist.com',
         alt: 'The Economist',
-        type: 'logoEconomist',
+        type: 'economist-small',
       },
     };
   }
 
   render() {
+    let title = null;
+    if (this.props.title) {
+      title = (
+        <h1 className="Masthead--title-wrap">
+          <span className="Masthead--title">
+            {this.props.title}
+          </span>
+          <span className="Masthead--flytitle">
+            {this.props.subtitle}
+          </span>
+        </h1>
+      );
+    }
     return (
-      <div className="mnv-ec-masthead">
-        <div className="mnv-ec-masthead-outer-wrap">
-          <div className="mnv-ec-masthead-wrap">
-            <a href={this.props.logo.href}
-            className="mnv-ec-masthead-logo svg-logo" title={this.props.logo.alt}>
-              <Icon
-              type={this.props.logo.type}
-              shape="square"
-              size={this.props.logo.type === 'logoEconomist' ? '0 0 144 72' : '0 0 1024 1024' }/>
-            </a>
-            {this.props.title ?
-              <h1 className="mnv-ec-masthead-text">
-                <span className="mnv-ec-masthead-title">
-                  {this.props.title}
-                </span>
-                <span className="mnv-ec-masthead-flytitle">
-                  {this.props.subtitle}
-                </span>
-              </h1> : null }
-            {this.props.children}
-          </div>
+      <div className="Masthead">
+        <div className="Masthead--container">
+          <a
+            href={this.props.logo.href}
+            className="Masthead--logo"
+            title={this.props.logo.alt}
+          >
+            <Icon
+              icon={this.props.logo.type} background="transparent"
+            />
+          </a>
+          {title}
+          {this.props.children}
         </div>
       </div>
     );

@@ -18,6 +18,7 @@
     "example": "./example.es6",
     "css": [
       "/node_modules/mocha/mocha.css",
+      "/example.css",
       "/index.css"
     ],
     "js": [
@@ -67,6 +68,7 @@
   "devDependencies": {
     "@economist/component-devpack": "^2.1.1",
     "@economist/component-devserver": "^2.0.0",
+    "@economist/component-icon": "^2.0.0",
     "@economist/component-testharness": "^1.1.0",
     "babel": "^5.5.8",
     "babelify": "^6.1.2",
