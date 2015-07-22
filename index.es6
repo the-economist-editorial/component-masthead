@@ -18,6 +18,7 @@ export default class MastHead extends React.Component {
         href: 'http://www.economist.com',
         alt: 'The Economist',
         type: 'economist-small',
+        size: '100%',
       },
     };
   }
