@@ -46,7 +46,7 @@ export default class MastHead extends React.Component {
             title={this.props.logo.alt}
           >
             <Icon
-              icon={this.props.logo.type} background="transparent"
+              icon={this.props.logo.type} background="transparent" size="100%"
             />
           </a>
           {title}
