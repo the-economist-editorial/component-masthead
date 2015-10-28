@@ -65,7 +65,7 @@
         "contents": "window.React = require('react');"
       },
       {
-        "contents": "require('react').render(require('example'),document.getElementById('component-preview'));"
+        "contents": "require('react-dom').render(require('example'),document.getElementById('component-preview'));"
       },
       {
         "contents": "if(document.getElementById('mocha')){mocha.checkLeaks();mocha.run();}"
