@@ -1,0 +1,2 @@
+# component-masthead
+> A masthead
